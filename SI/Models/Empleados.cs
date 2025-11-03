@@ -14,7 +14,7 @@ namespace SI.Models
         public int Id { get; set; }
 
         [MaxLength(13)]  
-        public int Identidad { get; set; }
+        public string Identidad { get; set; }
 
         [MaxLength(100)]
         public string Nombre { get; set; }
@@ -27,5 +27,7 @@ namespace SI.Models
 
         [MaxLength(100)]
         public string Correo { get; set; }
+
+        public string Foto { get; set; }
     }
 }

@@ -40,7 +40,7 @@ namespace SI.Controllers
             }
         }
         // GET
-        public async Task<List<Models.Empleados>> GetListaPersonas()
+        public async Task<List<Models.Empleados>> GetListaempleados()
         {
             return await _connection.Table<Models.Empleados>().ToListAsync();
         }

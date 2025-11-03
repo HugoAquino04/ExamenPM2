@@ -9,45 +9,45 @@
                 Clicked="btnfoto_Clicked"
                 Margin="50,20,50,20"/>
 
-        <Entry x:Name="Identidad"
-       Placeholder="Identidad"
-       Keyboard="Text"
-       TextColor="Black"
-       PlaceholderColor="Black"
-       HeightRequest="50"/> 
+            <Entry x:Name="identidad"
+           Placeholder="Identidad"
+           Keyboard="Text"
+           TextColor="Black"
+           PlaceholderColor="Black"
+           HeightRequest="50"/> 
 
-        <Entry x:Name="Nombre"
-       Placeholder="Nombre Completo"
-       Keyboard="Text"
-       TextColor="Black"
-       PlaceholderColor="Black"
-       HeightRequest="50"/>
+            <Entry x:Name="Nombre"
+           Placeholder="Nombre Completo"
+           Keyboard="Text"
+           TextColor="Black"
+           PlaceholderColor="Black"
+           HeightRequest="50"/>
 
-        <DatePicker x:Name="fechaing"
-            Format="d"
-            Background="White"
-            TextColor="Black"/>
+            <DatePicker x:Name="fechaing"
+                Format="d"
+                Background="White"
+                TextColor="Black"/>
 
-        <Entry x:Name="Puesto"
-       Placeholder="Puesto"
-       Keyboard="Telephone"
-       TextColor="Black"
-       PlaceholderColor="Black"
-       HeightRequest="50"/>
+            <Entry x:Name="Puesto"
+           Placeholder="Puesto"
+           Keyboard="Text"
+           TextColor="Black"
+           PlaceholderColor="Black"
+           HeightRequest="50"/>
 
-        <Entry x:Name="Correo"
-       Placeholder="Correo del Empleado"
-       Keyboard="Email"
-       TextColor="Black"
-       PlaceholderColor="Black"
-       HeightRequest="50"/>
+            <Entry x:Name="Correo"
+           Placeholder="Correo del Empleado"
+           Keyboard="Email"
+           TextColor="Black"
+           PlaceholderColor="Black"
+           HeightRequest="50"/>
 
-        <Button x:Name="btnprocesar"
-        Clicked="btnprocesar_Clicked"
-        Text="Agregar Empleado"
-        Margin="50,20,50,20"    
-        CornerRadius="50"
-        HeightRequest="50"
+            <Button x:Name="btnagregar"
+            Clicked="btnagregar_Clicked"
+            Text="Agregar Empleado"
+            Margin="50,20,50,20"    
+            CornerRadius="50"
+            HeightRequest="50"
         FontAttributes="Bold"/>
     </VerticalStackLayout>
 </ContentPage>

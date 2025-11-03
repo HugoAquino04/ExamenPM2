@@ -23,7 +23,7 @@ namespace SI
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Views.Home());
+            MainPage = new NavigationPage(new Views.Empleados()); 
         }
     }
 }

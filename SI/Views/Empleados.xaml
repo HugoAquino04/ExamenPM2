@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="SI.Views.Empleados"
+             Title="Empleados">
+
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Agregar" Clicked="ToolbarItem_Clicked"/>
+
+    </ContentPage.ToolbarItems>
+    <!-- Contenido principal -->
+    <ContentPage.Content>
+        <VerticalStackLayout Padding="10">
+
+            <Label Text="Listado de Empleados" 
+               FontSize="22"
+               FontAttributes="Bold"
+               HorizontalOptions="Center"
+               Margin="0,10,0,10" />
+
+            <CollectionView x:Name="listaempleados"
+                        SelectionMode="Single">  
+
+                <CollectionView.ItemsLayout>
+                    <LinearItemsLayout Orientation="Vertical"
+                                   ItemSpacing="10" />
+                </CollectionView.ItemsLayout>
+
+                <CollectionView.ItemTemplate>
+                    <DataTemplate>
+                        <Frame BorderColor="#cccccc"
+                           CornerRadius="10"
+                           HasShadow="True"
+                           Padding="10"
+                           Margin="0,5">
+
+                            <Grid ColumnDefinitions="*, Auto"
+                              ColumnSpacing="10"
+                              VerticalOptions="Center">
+
+                                <!-- Datos (a la izquierda) -->
+                                <VerticalStackLayout Grid.Column="0"
+                                                 VerticalOptions="Center">
+                                    <Label Text="{Binding Identidad}" 
+                                       FontSize="18"
+                                       FontAttributes="Bold" />
+                                    <Label Text="{Binding Nombre}" 
+                                       FontSize="16" />
+                                    <Label Text="{Binding FechaIngreso}"
+                                       FontSize="16" />
+                                    <Label Text="{Binding Puesto }"  
+                                       FontSize="16" />
+                                    <Label Text="{Binding Correo}"
+                                       FontSize="14"
+                                       TextColor="Gray" />
+                                </VerticalStackLayout>
+
+                                <!-- Imagen (a la derecha) -->
+                                <Image Grid.Column="1"
+                                   Source="{Binding Foto, Converter={StaticResource Base64ToImageConverter}}"
+                                   WidthRequest="70"
+                                   HeightRequest="70"
+                                   Aspect="AspectFill"
+                                   BackgroundColor="#dddddd"
+                                   VerticalOptions="Center"
+                                   HorizontalOptions="End"
+                                   Margin="5" />
+                            </Grid>
+                        </Frame>
+                    </DataTemplate>
+                </CollectionView.ItemTemplate>
+            </CollectionView>
+        </VerticalStackLayout>
+    </ContentPage.Content>
+</ContentPage>
