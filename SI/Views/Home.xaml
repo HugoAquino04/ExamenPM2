@@ -13,14 +13,14 @@
            Placeholder="Identidad"
            Keyboard="Text"
            TextColor="Black"
-           PlaceholderColor="Black"
+           PlaceholderColor="White"
            HeightRequest="50"/> 
 
             <Entry x:Name="Nombre"
            Placeholder="Nombre Completo"
            Keyboard="Text"
            TextColor="Black"
-           PlaceholderColor="Black"
+           PlaceholderColor="White"
            HeightRequest="50"/>
 
             <DatePicker x:Name="fechaing"
@@ -32,14 +32,14 @@
            Placeholder="Puesto"
            Keyboard="Text"
            TextColor="Black"
-           PlaceholderColor="Black"
+           PlaceholderColor="White"
            HeightRequest="50"/>
 
             <Entry x:Name="Correo"
            Placeholder="Correo del Empleado"
            Keyboard="Email"
            TextColor="Black"
-           PlaceholderColor="Black"
+           PlaceholderColor="White"
            HeightRequest="50"/>
 
             <Button x:Name="btnagregar"
